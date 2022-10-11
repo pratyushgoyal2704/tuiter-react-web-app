@@ -3,103 +3,789 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="style.css" rel="stylesheet"/>
+    <link href="../../vendors/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
 </head>
-<body bgcolor="black">
-<div class = "wd-body">
-    <div class="wd-search">
-        <input type="text" placeholder="Search Tuiter" size=70 class="wd-rounded-corners-all-around">
-        <a class="wd-pos-absolute-10-24" href="explore-settings.html">&#128269;</a>
-        <a class="wd-gear" href="explore-settings.html">&#x2699;</a>
-    </div>
-    <div class="wd-tab">
-        <button class="wd-btn-active">For you</button>
-        <button class="wd-btn">Trending</button>
-        <button class="wd-btn">COVID-19</button>
-        <button class="wd-btn">News</button>
-        <button class="wd-btn">Sports</button>
-        <button class="wd-btn">Entertainment</button>
-    </div>
-    <div class="wd-division">
-        <hr class="wd-boundary">
-    </div>
-    <div>
-        <br>
-        <label class="wd-topic">Trending in Science</label>
-        <br>
-        <label class="wd-title">Starship</label>
-        <br>
-        <label class="wd-topic">55.5k Tuits</label>
-        <hr class="wd-boundary">
-    </div>
-    <div>
-        <br>
-        <label class="wd-topic">Sports Trending</label>
-        <br>
-        <label class="wd-title">Joe Rogan</label>
-        <br>
-        <label class="wd-topic">5,218 Tuits</label>
-        <hr class="wd-boundary">
-    </div>
-    <div>
-        <br>
-        <label class="wd-topic">Trending in United States</label>
-        <br>
-        <label class="wd-title">Wonder Bread</label>
-        <br>
-        <label class="wd-topic">1,259 Tuits</label>
-    </div>
-    <hr class="wd-boundary">
-    <br>
-    <div class="wd-container">
-        <div class="wd-left-element">
-            <label class="wd-author">The New York Times</label>
-            <label class="wd-author-topic">&#183; Yesterday</label>
-            <br>
-            <label class="wd-title">On Call, Biden Warns Putin of ‘Severe’ Costs of Invading Ukraine</label>
+<body>
+<div class="m-2">
+    <div class="d-block d-sm-none">
+        <div class="row">
+            <div class="col-2">
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="fab fa-twitter"></i></li>
+                    <li class="list-group-item"><i class="fas fa-home"></i></li>
+                    <li class="list-group-item active"><i class="fas fa-hashtag"></i></li>
+                    <li class="list-group-item"><i class="fas fa-bell"></i></li>
+                    <li class="list-group-item"><i class="fas fa-envelope"></i></li>
+                    <li class="list-group-item"><i class="fas fa-bookmark"></i></li>
+                    <li class="list-group-item"><i class="fas fa-list"></i></li>
+                    <li class="list-group-item"><i class="fas fa-user"></i></li>
+                    <li class="list-group-item">
+                        <label class="float-start wd-moreicon">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </label>
+                    </li>
+                </ul>
+                <button class="btn wd-bg-color-blue rounded-pill w-100 wd-fg-color-white mt-2">Tuit</button>
+            </div>
+            <div class="col-10">
+                <div class="form-group wd-search">
+                    <div class="input-group">
+                        <span class="fa fa-search ps-3 form-control-feedback" style="padding-top: 10px"></span>
+                        <input type="text" class="form-control rounded-pill w-75 small" placeholder="Search Tuiter">
+                        <span class="fa fa-cog wd-cogsize wd-fg-color-blue ps-2 pt-1"></span>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs pt-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><label>For you</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>Trending</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>News</label></a>
+                    </li>
+                </ul>
+                <div class="pt-1 position-relative">
+                    <img src="starship.jpeg" class="card-img" width="100%">
+                    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+                        <h1 class="card-title wd-fg-color-white bottom-50" >SpaceX's Starship</h1>
+                    </div>
+                </div>
+                <ul class="list-group ">
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">ReactJS <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-fg-color-black h6">React.js is a component based front end library that makes
+                                    it very easy to build Single Page Application or SPAs</label>
+                            </div>
+                            <div>
+                                <img src="react.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-fg-color-black h6">JavaScript <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-fg-color-black h6">JavaScript is a programming language that can run on
+                                    browsers as well as desktops</label>
+                            </div>
+                            <div>
+                                <img src="js.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">jQuery</label>
+                                <label class="wd-topic wd-fg-color-light-gray">123k Tuits</label>
+                            </div>
+                            <div>
+                                <img src="jquery.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">NodeJS <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-topic wd-fg-color-light-gray">123k Tuits</label>
+                            </div>
+                            <div>
+                                <img src="node.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="wd-right-element">
-            <img class="wd-image" src="ntimes.png"/>
+    </div>
+    <div class="d-none d-sm-block d-md-none">
+        <div class="row">
+            <div class="col-2">
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="fab fa-twitter"></i></li>
+                    <li class="list-group-item"><i class="fas fa-home"></i></li>
+                    <li class="list-group-item active"><i class="fas fa-hashtag"></i></li>
+                    <li class="list-group-item"><i class="fas fa-bell"></i></li>
+                    <li class="list-group-item"><i class="fas fa-envelope"></i></li>
+                    <li class="list-group-item"><i class="fas fa-bookmark"></i></li>
+                    <li class="list-group-item"><i class="fas fa-list"></i></li>
+                    <li class="list-group-item"><i class="fas fa-user"></i></li>
+                    <li class="list-group-item">
+                        <label class="float-start wd-moreicon">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </label>
+                    </li>
+                </ul>
+                <button class="btn wd-bg-color-blue rounded-pill w-100 wd-fg-color-white mt-2">Tuit</button>
+            </div>
+            <div class="col-10">
+                <div class="form-group wd-search">
+                    <div class="input-group">
+                        <span class="fa fa-search ps-3 form-control-feedback" style="padding-top: 10px"></span>
+                        <input type="text" class="form-control rounded-pill w-75 small" placeholder="Search Tuiter">
+                        <span class="fa fa-cog wd-cogsize wd-fg-color-blue ps-2 pt-1"></span>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs pt-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><label>For you</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>Trending</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>News</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>Sports</label></a>
+                    </li>
+                </ul>
+                <div class="pt-1 position-relative">
+                    <img src="starship.jpeg" class="card-img" width="100%">
+                    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+                        <h1 class="card-title wd-fg-color-white bottom-50" >SpaceX's Starship</h1>
+                    </div>
+                </div>
+                <ul class="list-group ">
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">ReactJS <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-fg-color-black h6">React.js is a component based front end library that makes
+                                    it very easy to build Single Page Application or SPAs</label>
+                            </div>
+                            <div>
+                                <img src="react.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-fg-color-black h6">JavaScript <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-fg-color-black h6">JavaScript is a programming language that can run on
+                                    browsers as well as desktops</label>
+                            </div>
+                            <div>
+                                <img src="js.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">jQuery</label>
+                                <label class="wd-topic wd-fg-color-light-gray">123k Tuits</label>
+                            </div>
+                            <div>
+                                <img src="jquery.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">NodeJS <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-topic wd-fg-color-light-gray">123k Tuits</label>
+                            </div>
+                            <div>
+                                <img src="node.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <hr class="wd-boundary">
-    <br>
-    <div class="wd-container">
-        <div class="wd-left-element">
-            <label class="wd-author">Bloomberg Opinion</label>
-            <label class="wd-author-topic">&#183; Yesterday</label>
-            <br>
-            <label class="wd-title">Thinking about getting a booster? Read this first.</label>
-        </div>
-        <div class="wd-right-element">
-            <img class="wd-image" src="booster.jpeg">
+    <div class="d-none d-md-block d-lg-none">
+        <div class="row">
+            <div class="col-2">
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="fab fa-twitter"></i></li>
+                    <li class="list-group-item"><i class="fas fa-home"></i></li>
+                    <li class="list-group-item active"><i class="fas fa-hashtag"></i></li>
+                    <li class="list-group-item"><i class="fas fa-bell"></i></li>
+                    <li class="list-group-item"><i class="fas fa-envelope"></i></li>
+                    <li class="list-group-item"><i class="fas fa-bookmark"></i></li>
+                    <li class="list-group-item"><i class="fas fa-list"></i></li>
+                    <li class="list-group-item"><i class="fas fa-user"></i></li>
+                    <li class="list-group-item">
+                        <label class="float-start wd-moreicon">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </label>
+                    </li>
+                </ul>
+                <button class="btn wd-bg-color-blue rounded-pill w-100 wd-fg-color-white mt-2">Tuit</button>
+            </div>
+            <div class="col-10">
+                <div class="form-group wd-search">
+                    <div class="input-group">
+                        <span class="fa fa-search ps-3 form-control-feedback" style="padding-top: 10px"></span>
+                        <input type="text" class="form-control rounded-pill w-75 small" placeholder="Search Tuiter">
+                        <span class="fa fa-cog wd-cogsize wd-fg-color-blue ps-2 pt-1"></span>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs pt-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><label>For you</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>Trending</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>News</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>Sports</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1"><label>Entertainment</label></a>
+                    </li>
+                </ul>
+                <div class="pt-1 position-relative">
+                    <img src="starship.jpeg" class="card-img" width="100%">
+                    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+                        <h1 class="card-title wd-fg-color-white bottom-50" >SpaceX's Starship</h1>
+                    </div>
+                </div>
+                <ul class="list-group ">
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">ReactJS <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-fg-color-black h6">React.js is a component based front end library that makes
+                                    it very easy to build Single Page Application or SPAs</label>
+                            </div>
+                            <div>
+                                <img src="react.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-fg-color-black h6">JavaScript <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-fg-color-black h6">JavaScript is a programming language that can run on
+                                    browsers as well as desktops</label>
+                            </div>
+                            <div>
+                                <img src="js.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">jQuery</label>
+                                <label class="wd-topic wd-fg-color-light-gray">123k Tuits</label>
+                            </div>
+                            <div>
+                                <img src="jquery.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">NodeJS <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-topic wd-fg-color-light-gray">123k Tuits</label>
+                            </div>
+                            <div>
+                                <img src="node.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <hr class="wd-boundary">
-    <br>
-    <div class="wd-container">
-        <div class="wd-left-element">
-            <label class="wd-topic">COVID-19 &#183; Live</label>
-            <br>
-            <label class="wd-title">COVID-19: News and Updates for Massachusetts</label>
-        </div>
-        <div class="wd-right-element">
-            <img class="wd-image" src="mass.png">
+    <div class="d-none d-lg-block d-xl-none">
+        <div class="row">
+            <div class="col-1">
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="fab fa-twitter"></i></li>
+                    <li class="list-group-item"><i class="fas fa-home"></i></li>
+                    <li class="list-group-item active"><i class="fas fa-hashtag"></i></li>
+                    <li class="list-group-item"><i class="fas fa-bell"></i></li>
+                    <li class="list-group-item"><i class="fas fa-envelope"></i></li>
+                    <li class="list-group-item"><i class="fas fa-bookmark"></i></li>
+                    <li class="list-group-item"><i class="fas fa-list"></i></li>
+                    <li class="list-group-item"><i class="fas fa-user"></i></li>
+                    <li class="list-group-item">
+                        <label class="float-start wd-moreicon">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </label>
+                    </li>
+                </ul>
+                <button class="btn wd-bg-color-blue rounded-pill w-100 wd-fg-color-white mt-2">Tuit</button>
+            </div>
+            <div class="col-7">
+                <div class="form-group wd-search">
+                    <div class="input-group">
+                        <span class="fa fa-search ps-3 form-control-feedback" style="padding-top: 10px"></span>
+                        <input type="text" class="form-control rounded-pill w-75 small" placeholder="Search Tuiter">
+                        <span class="fa fa-cog wd-cogsize wd-fg-color-blue ps-2 pt-1"></span>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs pt-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><label>For you</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>Trending</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>News</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>Sports</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1"><label>Entertainment</label></a>
+                    </li>
+                </ul>
+                <div class="pt-1 position-relative">
+                    <img src="starship.jpeg" class="card-img" width="100%">
+                    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+                        <h1 class="card-title wd-fg-color-white bottom-50" >SpaceX's Starship</h1>
+                    </div>
+                </div>
+                <ul class="list-group ">
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">ReactJS <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-fg-color-black h6">React.js is a component based front end library that makes
+                                    it very easy to build Single Page Application or SPAs</label>
+                            </div>
+                            <div>
+                                <img src="react.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-fg-color-black h6">JavaScript <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-fg-color-black h6">JavaScript is a programming language that can run on
+                                    browsers as well as desktops</label>
+                            </div>
+                            <div>
+                                <img src="js.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">jQuery</label>
+                                <label class="wd-topic wd-fg-color-light-gray">123k Tuits</label>
+                            </div>
+                            <div>
+                                <img src="jquery.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">NodeJS <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-topic wd-fg-color-light-gray">123k Tuits</label>
+                            </div>
+                            <div>
+                                <img src="node.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="list-group ">
+                    <li class="list-group-item "><label class="h6">Who to Follow</label></li>
+                    <li class="list-group-item ">
+                        <img src="java.png" class="rounded-pill">
+                        <label class="h6 ps-2">Java <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@Java</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                    <li class="list-group-item ">
+                        <img src="rs.jpeg" class="rounded-pill">
+                        <label class="h6 ps-2"> Relativity Space <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@relativityspace</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                    <li class="list-group-item ">
+                        <img src="jalaj.png" class="rounded-pill">
+                        <label class="h6 ps-2"> Virgin Galactic <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@virgingalactic</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                    <li class="list-group-item ">
+                        <img src="nasa.png" class="rounded-pill">
+                        <label class="h6 ps-2"> NASA <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@NASA</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                    <li class="list-group-item ">
+                        <img src="tesla.png" class="rounded-pill">
+                        <label class="h6 ps-2"> Tesla <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@Tesla</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <hr class="wd-boundary">
-    <br>
-    <div class="wd-container">
-        <br>
-        <div class="wd-left-element">
-            <label class="wd-topic">Beijing 2022 &#183; Live</label>
-            <br>
-            <label class="wd-title">Beijing 2022: The United States at the Olympic Winter Games</label>
+    <div class="d-none d-xl-block d-xxl-none">
+        <div class="row">
+            <div class="col-2">
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="fab fa-twitter"></i></li>
+                    <li class="list-group-item"><i class="fas fa-home"><label class="ps-1">Home</label></i></li>
+                    <li class="list-group-item active"><i class="fas fa-hashtag"><label class="ps-1">Explore</label></i></li>
+                    <li class="list-group-item"><i class="fas fa-bell"><label class="ps-1">Notifications</label></i></li>
+                    <li class="list-group-item"><i class="fas fa-envelope"><label class="ps-1">Messages</label></i></li>
+                    <li class="list-group-item"><i class="fas fa-bookmark"><label class="ps-1">Bookmarks</label></i></li>
+                    <li class="list-group-item"><i class="fas fa-list"><label class="ps-1">Lists</label></i></li>
+                    <li class="list-group-item"><i class="fas fa-user"><label class="ps-1">Profile</label></i></li>
+                    <li class="list-group-item">
+                        <label class="float-start wd-moreicon">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </label>
+                        <label class="ps-1">More</label>
+                    </li>
+                </ul>
+                <button class="btn wd-bg-color-blue rounded-pill w-100 wd-fg-color-white mt-2">Tuit</button>
+            </div>
+            <div class="col-6">
+                <div class="form-group wd-search">
+                    <div class="input-group">
+                        <span class="fa fa-search ps-3 form-control-feedback" style="padding-top: 10px"></span>
+                        <input type="text" class="form-control rounded-pill w-75 small" placeholder="Search Tuiter">
+                        <span class="fa fa-cog wd-cogsize wd-fg-color-blue ps-2 pt-1"></span>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs pt-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><label>For you</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>Trending</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>News</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>Sports</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1"><label>Entertainment</label></a>
+                    </li>
+                </ul>
+                <div class="pt-1 position-relative">
+                    <img src="starship.jpeg" class="card-img" width="100%">
+                    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+                        <h1 class="card-title wd-fg-color-white bottom-50" >SpaceX's Starship</h1>
+                    </div>
+                </div>
+                <ul class="list-group ">
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">ReactJS <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-fg-color-black h6">React.js is a component based front end library that makes
+                                    it very easy to build Single Page Application or SPAs</label>
+                            </div>
+                            <div>
+                                <img src="react.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-fg-color-black h6">JavaScript <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-fg-color-black h6">JavaScript is a programming language that can run on
+                                    browsers as well as desktops</label>
+                            </div>
+                            <div>
+                                <img src="js.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">jQuery</label>
+                                <label class="wd-topic wd-fg-color-light-gray">123k Tuits</label>
+                            </div>
+                            <div>
+                                <img src="jquery.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">NodeJS <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-topic wd-fg-color-light-gray">123k Tuits</label>
+                            </div>
+                            <div>
+                                <img src="node.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="list-group ">
+                    <li class="list-group-item "><label class="h6">Who to Follow</label></li>
+                    <li class="list-group-item ">
+                        <img src="java.png" class="rounded-pill">
+                        <label class="h6 ps-2">Java <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@Java</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                    <li class="list-group-item ">
+                        <img src="rs.jpeg" class="rounded-pill">
+                        <label class="h6 ps-2"> Relativity Space <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@relativityspace</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                    <li class="list-group-item ">
+                        <img src="jalaj.png" class="rounded-pill">
+                        <label class="h6 ps-2"> Virgin Galactic <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@virgingalactic</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                    <li class="list-group-item ">
+                        <img src="nasa.png" class="rounded-pill">
+                        <label class="h6 ps-2"> NASA <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@NASA</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                    <li class="list-group-item ">
+                        <img src="tesla.png" class="rounded-pill">
+                        <label class="h6 ps-2"> Tesla <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@Tesla</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="wd-right-element">
-            <img class="wd-image" src="oly.png">
+    </div>
+    <div class="d-none d-xxl-block">
+        <div class="row">
+            <div class="col-2">
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="fab fa-twitter"></i></li>
+                    <li class="list-group-item"><i class="fa fa-home"><label class="ps-1">Home</label></i></li>
+                    <li class="list-group-item active"><i class="fas fa-hashtag"><label class="ps-1">Explore</label></i></li>
+                    <li class="list-group-item"><i class="fa fa-bell"><label class="ps-1">Notifications</label></i></li>
+                    <li class="list-group-item"><i class="fa fa-envelope"><label class="ps-1">Messages</label></i></li>
+                    <li class="list-group-item"><i class="fa fa-bookmark"><label class="ps-1">Bookmarks</label></i></li>
+                    <li class="list-group-item"><i class="fas fa-list"><label class="ps-1">Lists</label></i></li>
+                    <li class="list-group-item"><i class="fa fa-user"><label class="ps-1">Profile</label></i></li>
+                    <li class="list-group-item">
+                        <label class="float-start wd-moreicon">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </label>
+                        <label class="ps-1">More</label>
+                    </li>
+                </ul>
+                <button class="btn wd-bg-color-blue rounded-pill w-100 wd-fg-color-white mt-2">Tuit</button>
+            </div>
+            <div class="col-6">
+                <div class="form-group wd-search">
+                    <div class="input-group">
+                        <span class="fa fa-search ps-3 form-control-feedback" style="padding-top: 10px"></span>
+                        <input type="text" class="form-control rounded-pill w-75 small" placeholder="Search Tuiter">
+                        <span class="fa fa-cog wd-cogsize wd-fg-color-blue ps-2 pt-1"></span>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs pt-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><label>For you</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>Trending</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>News</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><label>Sports</label></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1"><label>Entertainment</label></a>
+                    </li>
+                </ul>
+                <div class="pt-1 position-relative">
+                    <img src="starship.jpeg" class="card-img" width="100%">
+                    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+                        <h1 class="card-title wd-fg-color-white bottom-50" >SpaceX's Starship</h1>
+                    </div>
+                </div>
+                <ul class="list-group ">
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">ReactJS <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-fg-color-black h6">React.js is a component based front end library that makes
+                                    it very easy to build Single Page Application or SPAs</label>
+                            </div>
+                            <div>
+                                <img src="react.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-fg-color-black h6">JavaScript <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-fg-color-black h6">JavaScript is a programming language that can run on
+                                    browsers as well as desktops</label>
+                            </div>
+                            <div>
+                                <img src="js.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">jQuery</label>
+                                <label class="wd-topic wd-fg-color-light-gray">123k Tuits</label>
+                            </div>
+                            <div>
+                                <img src="jquery.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="wd-topic d-flex flex-column">
+                                <label class="wd-topic wd-fg-color-light-gray">Web Development</label>
+                                <label class="wd-fg-color-black h6">NodeJS <i class="fas fa-check-circle"></i></label>
+                                <label class="wd-topic wd-fg-color-light-gray">123k Tuits</label>
+                            </div>
+                            <div>
+                                <img src="node.png" class="wd-rounded-borders">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="list-group ">
+                    <li class="list-group-item "><label class="h6">Who to Follow</label></li>
+                    <li class="list-group-item ">
+                        <img src="java.png" class="rounded-pill">
+                        <label class="h6 ps-2">Java <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@Java</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                    <li class="list-group-item ">
+                        <img src="rs.jpeg" class="rounded-pill">
+                        <label class="h6 ps-2"> Relativity Space <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@relativityspace</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                    <li class="list-group-item ">
+                        <img src="jalaj.png" class="rounded-pill">
+                        <label class="h6 ps-2"> Virgin Galactic <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@virgingalactic</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                    <li class="list-group-item ">
+                        <img src="nasa.png" class="rounded-pill">
+                        <label class="h6 ps-2"> NASA <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@NASA</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                    <li class="list-group-item ">
+                        <img src="tesla.png" class="rounded-pill">
+                        <label class="h6 ps-2"> Tesla <i class="fas fa-check-circle"></i>
+                            <br>
+                            <label class="wd-fg-color-light-gray wd-topic">@Tesla</label>
+                        </label>
+                        <button class="btn wd-bg-color-blue rounded-pill wd-fg-color-white float-end">Follow</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
+
 </body>
 </html>
