@@ -14,6 +14,7 @@ export default  [
         profilePic: '../../images/muskdp.jfif'
     },
     {
+
         userName: 'New York Post',
         handle: 'nypost',
         time: '23h',
