@@ -33,7 +33,7 @@ const PostItem = (
                     </div>
                     <span className="wd-font-color-white" style={{paddingLeft : '2%'}}>{post.body}</span>
                     <div className="row border-thin border-grey border-solid" style={{paddingLeft : '2%'}}>
-                        <img src={`/images/${post.image}`} className="wd-post-image pt-1 pb-1"/>
+                        <img src={`/images/${post.image}`} className="wd-post-image pt-1 pb-1" alt='cfc'/>
                         <div className="wd-text-bold wd-font-color-white">
                             {post.cardTitle}
                         </div>
