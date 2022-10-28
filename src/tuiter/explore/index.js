@@ -18,17 +18,20 @@ const ExploreComponent = () => {
             </div>
             <ul className="nav nav-pills mb-2">
                 <li className="nav-item">
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a className="nav-link active">For You</a>
                 </li>
                 <li className="nav-item">
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a className="nav-link">Trending</a>
                 </li>
                 <li className="nav-item">
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a className="nav-link">News</a>
                 </li>
             </ul>
             <div className="position-relative mb-2">
-                <img src="/images/starship.jpeg" className="w-100" height="500px"/>
+                <img src="/images/starship.jpeg" className="w-100" height="500px" alt="cfc"/>
                 <h1 className="position-absolute wd-nudge-up text-white">
                     SpaceX Starship</h1>
             </div>

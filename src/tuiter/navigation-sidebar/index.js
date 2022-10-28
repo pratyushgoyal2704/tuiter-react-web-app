@@ -1,14 +1,14 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {useLocation} from "react-router";
+// import {useLocation} from "react-router";
 
 const NavigationSidebar = (
     {
         active = 'explore'
     }
 ) => {
-    const {pathname} = useLocation();
-    const paths = pathname.split('/')
+    // const {pathname} = useLocation();
+    // const paths = pathname.split('/')
     // const active = paths[2];
     return (
         <div className="list-group">
@@ -22,26 +22,32 @@ const NavigationSidebar = (
             <Link to="/" className="list-group-item">
                 Labs
             </Link>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
                 Notifications
             </a>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
                 Messages
             </a>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
                 Bookmarks
             </a>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
                 Lists
             </a>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
                 Profile
             </a>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className={`list-group-item
                     ${active === 'more'?'active':''}`}>
                 More
