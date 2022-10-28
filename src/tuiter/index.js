@@ -1,25 +1,3 @@
-// import Nav from "../nav";
-// import NavigationSidebar from "./navigation-sidebar";
-// import WhoToFollowListItem from "./who-to-follow-list/who-to-follow-list-item";
-// import WhoToFollowList from "./who-to-follow-list";
-// import PostSummaryItem from "./post-summary-list/post-summary-item";
-// import PostSummaryList from "./post-summary-list";
-// import ExploreComponent from "./explore";
-//
-// const Tuiter = () => {
-//     return(
-//         <div>
-//             <Nav/>
-//             <NavigationSidebar active="home"/>
-//             <WhoToFollowList/>
-//             <PostSummaryList/>
-//             <ExploreComponent/>
-//             <h1>Tuiter</h1>
-//         </div>
-//     );
-// }
-// export default Tuiter
-
 import React from "react";
 import ExploreComponent from "./explore";
 import NavigationSidebar from "./navigation-sidebar";
