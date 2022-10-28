@@ -12,6 +12,7 @@ const NavigationSidebar = (
     // const active = paths[2];
     return (
         <div className="list-group">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="list-group-item">Tuiter</a>
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
                 Home
