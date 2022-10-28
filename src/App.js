@@ -29,6 +29,7 @@ import Labs from "./labs";
 import HelloWorld from "./labs/a6/hello-world";
 import Tuiter from "./tuiter";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import "./App.css";
 
 function App() {
     return (
@@ -39,7 +40,7 @@ function App() {
                            element={<Labs/>}/>
                     <Route path="/hello"
                            element={<HelloWorld/>}/>
-                    <Route path="/tuiter"
+                    <Route path="/tuiter/*"
                            element={<Tuiter/>}/>
                 </Routes>
             </div>
