@@ -1,6 +1,5 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import hello from "./reducers/hello";
 
 /*const HelloReduxExampleComponent = () => {
     const message = useSelector((hello) => hello.message);
