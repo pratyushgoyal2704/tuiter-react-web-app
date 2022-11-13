@@ -40,10 +40,10 @@ const NavigationSidebar = () => {
                 Lists
             </a>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className={`list-group-item
+            <Link to="/tuiter/profile" className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
                 Profile
-            </a>
+            </Link>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className={`list-group-item
                     ${active === 'more'?'active':''}`}>
