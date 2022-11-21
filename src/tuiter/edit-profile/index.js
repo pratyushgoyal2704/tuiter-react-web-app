@@ -12,7 +12,6 @@ const EditProfileComponent = () => {
         dispatch(editProfile(profile));
     }
     return (
-
         <div>
             {/* eslint-disable-next-line no-restricted-globals */}
             <div className="mb-4"><span className="bi bi-x-lg fw-bolder" onClick={() => history.back()}></span>
