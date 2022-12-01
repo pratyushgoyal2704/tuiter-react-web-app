@@ -8,6 +8,7 @@ const currentUser = {
     "image": "/images/nasa.png",
 };
 
+
 const templateTuit = {
     ...currentUser,
     "topic": "Space",
